@@ -1,6 +1,6 @@
 # VTracerCpp
 
-A pure C++ port of the [vtracer](https://github.com/visioncortex/vtracer) library, originally written in Rust by [visioncortex](https://github.com/visioncortex). 
+A pure C++ port of the [vtracer](https://github.com/visioncortex/vtracer) library, originally written in Rust by [visioncortex](https://github.com/visioncortex). Translated to C++ using Google Gemini Pro.
 
 **VTracerCpp** is a fast, dependency-light tool and library for converting raster images (like PNG or JPEG) into vector graphics (SVG). This repository aims to bring the exact same high-quality, hierarchical clustering and spline-fitting algorithms to the C++ ecosystem, paired with a lightweight graphical interface.
 
@@ -25,4 +25,5 @@ $ Open vtracercpp.sln project in Visual Studio and build
 ```
 
 Alternative open as folder
+
 
