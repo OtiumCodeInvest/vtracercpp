@@ -1,7 +1,6 @@
-
 project(viewer)
 
-include_directories(${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/3rdparty ${CMAKE_SOURCE_DIR}/3rdparty/glew-2.1.0/include ${CMAKE_SOURCE_DIR}/3rdparty/glfw/include ${CMAKE_SOURCE_DIR}/3rdparty/imgui-docking)
+include_directories(${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/wrapcv ${CMAKE_SOURCE_DIR}/3rdparty ${CMAKE_SOURCE_DIR}/3rdparty/glew-2.1.0/include ${CMAKE_SOURCE_DIR}/3rdparty/glfw/include ${CMAKE_SOURCE_DIR}/3rdparty/imgui-docking)
 add_definitions(-DGLEW_STATIC)
 
 set(src_files_imgui
@@ -21,8 +20,6 @@ set(src_files_imgui
 set(FILES
 	viewer.cpp
 	vtracer.cpp
-	
-	
 	${CMAKE_SOURCE_DIR}/3rdparty/glew-2.1.0/src/glew.c
 )
 
@@ -36,5 +33,5 @@ if(MSVC)
 else()
 	add_executable(${PROJECT_NAME} ${FILES} ${src_files_imgui})
 	find_package(glfw3 3.3 REQUIRED)
-	target_link_libraries(${PROJECT_NAME} shared glfw OpenGL::GL ${CMAKE_DL_LIBS})
+	target_link_libraries(${PROJECT_NAME} shared wrapcv glfw OpenGL::GL ${CMAKE_DL_LIBS})
 endif()

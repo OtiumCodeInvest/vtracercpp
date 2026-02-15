@@ -704,8 +704,8 @@ void Viewer::Run(){
 	std::mutex profilerDisplayLock;
 	std::vector<DisplayTimer> profilerDisplay;
 
-	m_width=2048;
-	m_height=2048;
+	m_width=1024;
+	m_height=1024;
 
 	m_pixelsRgb.resize(m_width*m_height*3);
 	m_pixelsDisplayRgb.resize(m_width*m_height*3);

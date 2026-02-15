@@ -24,7 +24,9 @@ void cpp_run_clustering(BuilderImpl* b,int merge_threshold,int32_t deepen_diff);
 void cpp_batch_convert(BuilderImpl* b,BatchConfig conf);
 uint32_t cpp_get_result_count();
 
+#ifdef _WIN32
 #pragma warning( disable : 4267 )
+#endif
 
 // =============================================================
 // 1. DATA STRUCTURES

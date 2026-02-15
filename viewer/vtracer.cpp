@@ -594,8 +594,14 @@ uint32_t cpp_decompose_mask(bool) {
 			while(!q.empty()){
 				uint32_t curr=q.front(); q.pop(); sub.indices.push_back(curr);
 				uint32_t cy=curr/w,cx=curr%w;
-				if((int)cx<sub.rect_l) sub.rect_l=cx; if((int)cx+1>sub.rect_r) sub.rect_r=cx+1;
-				if((int)cy<sub.rect_t) sub.rect_t=cy; if((int)cy+1>sub.rect_b) sub.rect_b=cy+1;
+				if((int)cx<sub.rect_l)
+					sub.rect_l=cx;
+				if((int)(cx+1)>sub.rect_r)
+					sub.rect_r=cx+1;
+				if((int)cy<sub.rect_t)
+					sub.rect_t=cy;
+				if((int)(cy+1)>sub.rect_b)
+					sub.rect_b=cy+1;
 				if(cy>0&&global_mask_buffer[curr-w]){ global_mask_buffer[curr-w]=0; q.push(curr-w); }
 				if(cy<h-1&&global_mask_buffer[curr+w]){ global_mask_buffer[curr+w]=0; q.push(curr+w); }
 				if(cx>0&&global_mask_buffer[curr-1]){ global_mask_buffer[curr-1]=0; q.push(curr-1); }
@@ -638,8 +644,14 @@ uint32_t cpp_find_holes() {
 				uint32_t curr=q.front(); q.pop(); hole.indices.push_back(curr);
 				uint32_t cy=curr/w,cx=curr%w;
 				if(cx==0||cx==w-1||cy==0||cy==h-1) edge=true;
-				if((int)cx<hole.rect_l) hole.rect_l=cx; if((int)cx+1>hole.rect_r) hole.rect_r=cx+1;
-				if((int)cy<hole.rect_t) hole.rect_t=cy; if((int)cy+1>hole.rect_b) hole.rect_b=cy+1;
+				if((int)cx<hole.rect_l)
+					hole.rect_l=cx;
+				if((int)cx+1>hole.rect_r)
+					hole.rect_r=cx+1;
+				if((int)cy<hole.rect_t)
+					hole.rect_t=cy;
+				if((int)cy+1>hole.rect_b)
+					hole.rect_b=cy+1;
 				if(cy>0&&global_mask_buffer[curr-w]==0){ global_mask_buffer[curr-w]=2; q.push(curr-w); }
 				if(cy<h-1&&global_mask_buffer[curr+w]==0){ global_mask_buffer[curr+w]=2; q.push(curr+w); }
 				if(cx>0&&global_mask_buffer[curr-1]==0){ global_mask_buffer[curr-1]=2; q.push(curr-1); }
