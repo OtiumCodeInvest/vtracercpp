@@ -6,6 +6,8 @@ A pure C++ port of the [vtracer](https://github.com/visioncortex/vtracer) librar
 
 Replicates the hierarchical clustering, path simplification, and spline generation of the original Rust implementation.
 
+Source code for GLEW, GLFW, ImGui, and stb_image.h is provided within the project
+
 ## Build command on Linux
 ```
 $ mkdir build
@@ -23,3 +25,4 @@ $ Open vtracercpp.sln project in Visual Studio and build
 ```
 
 Alternative open as folder
+
