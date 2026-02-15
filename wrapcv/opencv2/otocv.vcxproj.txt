@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_fastlink|x64">
+      <Configuration>Release_fastlink</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="opencv2\core\src\algorithm.cpp" />
+    <ClCompile Include="opencv2\core\src\alloc.cpp" />
+    <ClCompile Include="opencv2\core\src\arithm.cpp" />
+    <ClCompile Include="opencv2\core\src\array.cpp" />
+    <ClCompile Include="opencv2\core\src\cmdparser.cpp" />
+    <ClCompile Include="opencv2\core\src\convert.cpp" />
+    <ClCompile Include="opencv2\core\src\copy.cpp" />
+    <ClCompile Include="opencv2\core\src\datastructs.cpp" />
+    <ClCompile Include="opencv2\core\src\drawing.cpp" />
+    <ClCompile Include="opencv2\core\src\dxt.cpp" />
+    <ClCompile Include="opencv2\core\src\glob.cpp" />
+    <ClCompile Include="opencv2\core\src\gl_core_3_1.cpp" />
+    <ClCompile Include="opencv2\core\src\gpumat.cpp" />
+    <ClCompile Include="opencv2\core\src\lapack.cpp" />
+    <ClCompile Include="opencv2\core\src\mathfuncs.cpp" />
+    <ClCompile Include="opencv2\core\src\matmul.cpp" />
+    <ClCompile Include="opencv2\core\src\matop.cpp" />
+    <ClCompile Include="opencv2\core\src\matrix.cpp" />
+    <ClCompile Include="opencv2\core\src\opengl_interop.cpp" />
+    <ClCompile Include="opencv2\core\src\opengl_interop_deprecated.cpp" />
+    <ClCompile Include="opencv2\core\src\out.cpp" />
+    <ClCompile Include="opencv2\core\src\parallel.cpp" />
+    <ClCompile Include="opencv2\core\src\persistence.cpp" />
+    <ClCompile Include="opencv2\core\src\rand.cpp" />
+    <ClCompile Include="opencv2\core\src\stat.cpp" />
+    <ClCompile Include="opencv2\core\src\system.cpp" />
+    <ClCompile Include="opencv2\core\src\tablescore.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\accum.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\approx.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\canny.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\clahe.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\color.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\contours.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\convhull.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\corner.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\cornersubpix.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\deriv.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\distransform.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\emd.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\featureselect.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\filter.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\floodfill.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\gabor.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\generalized_hough.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\geometry.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\grabcut.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\histogram.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\hough.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\imgwarp.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\linefit.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\matchcontours.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\moments.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\morph.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\phasecorr.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\pyramids.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\rotcalipers.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\samplers.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\segmentation.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\shapedescr.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\smooth.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\subdivision2d.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\sumpixels.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\tablesimgproc.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\templmatch.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\thresh.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\undistort.cpp" />
+    <ClCompile Include="opencv2\imgproc\src\utils.cpp" />
+    <ClCompile Include="otocv.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="opencv2\core\affine.hpp" />
+    <ClInclude Include="opencv2\core\core.hpp" />
+    <ClInclude Include="opencv2\core\core_c.h" />
+    <ClInclude Include="opencv2\core\cuda_devptrs.hpp" />
+    <ClInclude Include="opencv2\core\devmem2d.hpp" />
+    <ClInclude Include="opencv2\core\eigen.hpp" />
+    <ClInclude Include="opencv2\core\gpumat.hpp" />
+    <ClInclude Include="opencv2\core\internal.hpp" />
+    <ClInclude Include="opencv2\core\mat.hpp" />
+    <ClInclude Include="opencv2\core\opengl_interop.hpp" />
+    <ClInclude Include="opencv2\core\opengl_interop_deprecated.hpp" />
+    <ClInclude Include="opencv2\core\operations.hpp" />
+    <ClInclude Include="opencv2\core\src\gl_core_3_1.hpp" />
+    <ClInclude Include="opencv2\core\src\precomp.hpp" />
+    <ClInclude Include="opencv2\core\types_c.h" />
+    <ClInclude Include="opencv2\core\version.hpp" />
+    <ClInclude Include="opencv2\core\wimage.hpp" />
+    <ClInclude Include="opencv2\dynamicuda\dynamicuda.hpp" />
+    <ClInclude Include="opencv2\imgproc\imgproc.hpp" />
+    <ClInclude Include="opencv2\imgproc\imgproc_c.h" />
+    <ClInclude Include="opencv2\imgproc\src\gcgraph.hpp" />
+    <ClInclude Include="opencv2\imgproc\src\precomp.hpp" />
+    <ClInclude Include="opencv2\imgproc\src\_geom.h" />
+    <ClInclude Include="opencv2\imgproc\src\_list.h" />
+    <ClInclude Include="opencv2\imgproc\types_c.h" />
+    <ClInclude Include="otocv.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D3F66333-D864-4F8D-8C70-235CCFEA95D5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>otocv</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_fastlink|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_fastlink|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_fastlink|x64'">
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_STATIC_=static;CUSTOM_ALLOCATOR;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../;../../Native/otocv/;../../Tracker/RealTimeTracker/</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_STATIC_=static;CUSTOM_ALLOCATOR;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../;../../Native/otocv/;../../Tracker/RealTimeTracker/</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <StringPooling>true</StringPooling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ControlFlowGuard>false</ControlFlowGuard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_fastlink|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_STATIC_=static;CUSTOM_ALLOCATOR;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../;../../Native/otocv/;../../Tracker/RealTimeTracker/</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <StringPooling>true</StringPooling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ControlFlowGuard>false</ControlFlowGuard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
