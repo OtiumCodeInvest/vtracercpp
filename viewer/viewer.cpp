@@ -659,12 +659,19 @@ void Viewer::Run(){
 		uprintf("glfwInit failed\n");
 		return;
 	}
-
 	glfwWindowHint(GLFW_CLIENT_API,GLFW_OPENGL_ES_API);
-	const char* glsl_version="#version 300 es";//#version 130";
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,0);
-
+#if __APPLE__
+    const char* glsl_version="#version 330";
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,2);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, true);
+#else
+    glfwWindowHint(GLFW_CLIENT_API,GLFW_OPENGL_ES_API);
+    const char* glsl_version="#version 300 es";//#version 130";
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,0);
+#endif
 	GLFWwindow* window=glfwCreateWindow(2200,1200,"VTracer CPP",NULL,NULL);
 	if(!window){
 		uprintf("Unable to create window\n");
